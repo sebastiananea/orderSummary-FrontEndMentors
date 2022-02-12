@@ -1,0 +1,109 @@
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+}
+
+.card {
+  width: 25%;
+  border-radius: 14px;
+
+  background-color: #fff;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+  }
+}
+
+.hero > img {
+  width: 100%;
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
+}
+
+.main {
+  padding: 2em;
+}
+
+.main > h2 {
+  margin-top: 0;
+  font-weight: 900;
+  text-align: center;
+}
+
+.main > p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1em;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan {
+  border-radius: 14px;
+  padding: 1em;
+  background: hsl(225, 100%, 98%);
+  margin-top: 2.5em;
+  display: grid;
+  grid-template-columns: 20% 55% 25%;
+  justify-content: center;
+}
+
+.plan > img {
+  width: 70%;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  color: hsl(224, 23%, 55%);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.link > a {
+  font-size: 700;
+  color: hsl(245, 75%, 52%);
+}
+
+.payment {
+  cursor: pointer;
+  margin-top: 2.5em;
+  background-color: hsl(245, 75%, 52%);
+  text-align: center;
+  padding: 0.8em;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 14px;
+}
+
+.cancel {
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  padding: 0.8em;
+  margin: 0.5em;
+  cursor: pointer;
+}
